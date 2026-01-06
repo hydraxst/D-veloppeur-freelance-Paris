@@ -1,4 +1,3 @@
-// Smooth scroll behavior for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -12,7 +11,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add animation on scroll
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -27,7 +25,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all cards and sections
 document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('.card, .info-card, .platform-card');
     elements.forEach(el => {
@@ -38,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Add active state to navigation
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
@@ -63,7 +59,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Dynamic TJM calculator (optional feature)
 function calculateMonthlyRevenue() {
     const tjm = parseFloat(document.getElementById('tjm-input')?.value) || 0;
     const daysPerMonth = parseFloat(document.getElementById('days-input')?.value) || 0;
@@ -75,7 +70,6 @@ function calculateMonthlyRevenue() {
     }
 }
 
-// Add event listeners for calculator if elements exist
 document.addEventListener('DOMContentLoaded', () => {
     const tjmInput = document.getElementById('tjm-input');
     const daysInput = document.getElementById('days-input');
@@ -84,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (daysInput) daysInput.addEventListener('input', calculateMonthlyRevenue);
 });
 
-// Accordion functionality
 document.addEventListener('DOMContentLoaded', () => {
     const accordionHeaders = document.querySelectorAll('.accordion-header');
     
@@ -93,12 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const accordionItem = header.parentElement;
             const isActive = accordionItem.classList.contains('active');
             
-            // Close all accordion items
             document.querySelectorAll('.accordion-item').forEach(item => {
                 item.classList.remove('active');
             });
             
-            // Open clicked item if it wasn't active
             if (!isActive) {
                 accordionItem.classList.add('active');
             }
@@ -106,10 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Track external links (analytics placeholder)
 document.querySelectorAll('a[target="_blank"]').forEach(link => {
     link.addEventListener('click', (e) => {
         console.log('External link clicked:', e.target.href);
         // Here you could add analytics tracking
     });
 });
+
