@@ -9,7 +9,7 @@
     --secondary-color: #059669;
     --accent-color: #34d399;
     --text-dark: #1f2937;
-    --text-light: #6b7280;
+    --text-light: #4b5563;
     --bg-light: #f0fdf4;
     --white: #ffffff;
     --border-color: #d1fae5;
@@ -76,6 +76,8 @@ nav .container {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links {
@@ -116,6 +118,9 @@ nav .container {
 .hero p {
     font-size: 1.2rem;
     opacity: 0.9;
+    opacity: 1;
+    color: #f0fdf4;
+    font-weight: 400;
 }
 
 /* Sections */
@@ -149,7 +154,7 @@ nav .container {
     margin-top: 2rem;
 }
 
-/* Cards */
+
 .card {
     background: var(--white);
     border-radius: 12px;
@@ -170,9 +175,10 @@ nav .container {
 }
 
 .card h3 {
-    color: var(--primary-color);
+    color: #047857;
     margin-bottom: 1rem;
     font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .price {
@@ -183,9 +189,10 @@ nav .container {
 }
 
 .price-label {
-    color: var(--text-light);
+    color: color: #374151;
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
 .card ul {
@@ -214,8 +221,9 @@ nav .container {
 }
 
 .info-card h3 {
-    color: var(--primary-color);
+    color: #047857;
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .info-card ul {
@@ -581,5 +589,6 @@ html {
 .platform-card {
     animation: fadeIn 0.6s ease-out;
 }
+
 
 
