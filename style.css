@@ -123,7 +123,7 @@ nav .container {
     font-weight: 400;
 }
 
-/* Sections */
+
 .section {
     padding: 4rem 0;
 }
@@ -175,7 +175,7 @@ nav .container {
 }
 
 .card h3 {
-    color: #047857;
+    color: #1e40af;
     margin-bottom: 1rem;
     font-size: 1.3rem;
     font-weight: 600;
@@ -221,7 +221,7 @@ nav .container {
 }
 
 .info-card h3 {
-    color: #047857;
+    color: #1e40af;
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -245,7 +245,6 @@ nav .container {
     font-weight: bold;
 }
 
-/* Info Box */
 .info-box {
     background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
     border-radius: 12px;
@@ -259,6 +258,13 @@ nav .container {
     font-size: 1.3rem;
 }
 
+.info-box-title {
+    color: #1e40af;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+    
 .info-box ul {
     list-style: none;
     display: grid;
@@ -338,6 +344,13 @@ nav .container {
     margin-top: 3rem;
 }
 
+.tips-box-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+}
+    
 .tips-box h4 {
     margin-bottom: 1.5rem;
     font-size: 1.4rem;
@@ -371,9 +384,10 @@ nav .container {
 }
 
 .resource-card h3 {
-    color: var(--primary-color);
+    color: #1e40af;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .resource-card ul {
@@ -522,9 +536,15 @@ footer p {
 }
 
 .accordion-content-inner h4 {
-    color: var(--primary-color);
+    color: #1e40af;
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
     font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.accordion-content-inner h4:first-child {
+    margin-top: 0;
 }
 
 .accordion-content-inner p {
@@ -589,6 +609,7 @@ html {
 .platform-card {
     animation: fadeIn 0.6s ease-out;
 }
+
 
 
 
