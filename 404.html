@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page non trouvée | Développeur Freelance Paris</title>
+    <meta name="description" content="La page que vous recherchez n'existe pas. Retournez au guide complet pour développeurs freelance à Paris.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.developpeur-freelance-paris.fr/">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #2563eb;
+            line-height: 1;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin: 1rem 0;
+        }
+        
+        .error-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 1rem auto 2rem;
+            line-height: 1.6;
+        }
+        
+        .error-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .error-btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .error-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .error-btn-secondary {
+            background: var(--white);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .error-btn-secondary:hover {
+            background: var(--bg-light);
+            color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .quick-links {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+            max-width: 800px;
+        }
+        
+        .quick-links h2 {
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .quick-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            text-align: left;
+        }
+        
+        .quick-link-item {
+            padding: 1rem;
+            background: var(--white);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .quick-link-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .quick-link-item a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .quick-link-item p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .error-links {
+                flex-direction: column;
+            }
+            
+            .error-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h2 class="logo">Développeur Freelance Paris</h2>
+                <ul class="nav-links">
+                    <li><a href="/#tarifs">Tarifs</a></li>
+                    <li><a href="/#conseils">Conseils</a></li>
+                    <li><a href="/#demarches">Démarches</a></li>
+                    <li><a href="/#plateformes">Plateformes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="error-container">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Page non trouvée</h2>
+            <p class="error-description">
+                Oups ! La page que vous recherchez n'existe pas ou a été déplacée. 
+                Peut-être cherchiez-vous des informations sur les tarifs freelance, 
+                les démarches administratives ou les plateformes pour trouver des missions ?
+            </p>
+            
+            <div class="error-links">
+                <a href="/" class="error-btn">
+                    Retour à l'accueil
+                </a>
+                <a href="/#demarches" class="error-btn error-btn-secondary">
+                    Guide des démarches
+                </a>
+            </div>
+            
+            <div class="quick-links">
+                <h2>Pages populaires</h2>
+                <div class="quick-links-grid">
+                    <div class="quick-link-item">
+                        <a href="/#tarifs">Tarifs TJM</a>
+                        <p>Découvrez les tarifs moyens à Paris (300-900€/jour)</p>
+                    </div>
+                    <div class="quick-link-item">
+                        <a href="/#demarches">Démarches Admin</a>
+                        <p>Guide complet pour devenir freelance</p>
+                    </div>
+                    <div class="quick-link-item">
+                        <a href="/#plateformes">Plateformes</a>
+                        <p>Malt, Freelance.com, Comet et plus</p>
+                    </div>
+                    <div class="quick-link-item">
+                        <a href="/#conseils">Conseils</a>
+                        <p>Astuces pour réussir en freelance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer itemscope itemtype="https://schema.org/WPFooter">
+        <div class="container footer-content">
+            <p>&copy; 2026 <strong>Développeur Freelance Paris</strong> - Guide informatif pour développeurs indépendants à Paris</p>
+            <p class="disclaimer">Les tarifs TJM indiqués sont des moyennes basées sur le marché parisien 2026 et peuvent varier selon les profils, expériences et types de missions.</p>
+        </div>
+    </footer>
+
+    <script>
+        console.log('Page 404 - URL demandée:', window.location.href);
+    </script>
+</body>
+</html>
